@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&family=Lexend:wght@100;400;500;600;700;800&family=Orelega+One&display=swap');
+
+/* 
+font-family: 'Cabin', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Lexend', sans-serif;
+font-family: 'Orelega One', cursive;
+font-family: 'Cormorant Garamond', serif;
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ece9e3;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cormorant Garamond', serif;
+  color: #474747;
+}
+
+p {
+  font-family: 'Cabin', sans-serif;
+  // font-size: 0.9rem;
+}
+
+.btn {
+  border: none;
+  background: none;
+  color: #474747;
+}
+
+.header {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.header-image {
+  background-image: url(/images/header-image.PNG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 370px;
+  width: 100%;
+}
+
+.header-text {
+  margin: 2em 1em 0 1em;
+  .header-title {
+    font-size: 2.1rem;
+    font-weight: 900;
+  }
+  p {
+    margin-top: 0.5em;
+  }
+}
+.ht-san-serif {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 100;
+}
+
+.header-btn {
+  background-color: #b6aa9246;
+  cursor: pointer;
+  padding: 1em 1.5em;
+  margin-top: 2em;
+  font-weight: 600;
+}
+
+.header-stats {
+  width: 65%;
+  border-top: 1px solid #b6aa9246;
+  border-bottom: 1px solid #b6aa9246;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  .stat {
+    margin: 1.5em 0;
+
+    .stat-number {
+      font-family: 'Cabin', sans-serif;
+      color: #b6aa92e5;
+      // color: #b6aa92c0;
+    }
+  }
+}
+
+.image-slider {
+  margin-top: 5em;
+  h1,
+  p {
+    margin: 0.5em 1.5em;
+    text-align: center;
+  }
+}
+
+.swiper-container,
+.swiper-container-new {
+  width: 100%;
+  height: 300px;
+  // height: 400px;
+  margin: 5em 0 2.5em;
+}
+.menu-slider .swiper-container {
+  margin: 15px 0 25px;
+}
+
+.swiper-slide {
+  margin-left: 10px;
+  text-align: center;
+  font-size: 18px;
+  // background: #fff;
+  margin-right: 2px !important;
+  width: 155px !important;
+  // width: 225px !important;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  // border-radius: 5%;
+  overflow: hidden;
+}
+
+.swiper-slide.slide2 {
+  width: 220px !important;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+.swiper-container.swiper2 {
+  height: 200px;
+}
+
+.swiper-slide img {
+  /* width: 100%; MAYBE PUT BACK, BUT KEEPS IMAGES TO SCALE*/
+  height: 100%;
+}
+.swiper-slide.slide2 img {
+  // width: 220px;
+  width: 100%;
+
+  height: 50%;
+}
+// .swiper-slide .shade {
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.199);
+//   position: absolute;
+// }
+// .swiper-slide h3 {
+//   position: absolute;
+//   color: #fff;
+//   // font-size: 15px;
+//   left: 0;
+//   margin-left: 1em;
+//   text-align: left;
+//   line-height: 14px;
+//   bottom: 17%;
+// }
+// .swiper-slide h6 {
+//   position: absolute;
+//   color: #fff;
+//   font-size: 9px;
+//   left: 0;
+//   bottom: 6%;
+//   margin-left: 8px;
+//   text-align: left;
+//   line-height: 14px;
+//   font-weight: 400;
+// }
+// .swiper-slide h6 img {
+//   width: 10px;
+//   height: 10px;
+//   margin-right: 5px;
+// }
+
+.benefits {
+  margin: 0 1em;
+  h1 {
+    margin-bottom: 0.5em;
+  }
+  .benefits-description {
+    margin-bottom: 2em;
+  }
+  .benefit-block {
+    border-top: 1px solid #b6aa9246;
+    border-bottom: 1px solid #b6aa9246;
+    padding: 0.75em 0 2em;
+    h3 {
+      margin-bottom: 0.5em;
+      font-weight: 900;
+    }
+  }
+}
+
+.image-break {
+  background-image: url(/images/Hero1.jpg);
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.process {
+  margin-top: 5em;
+  h1 {
+    margin: 0.5em 1.5em;
+    text-align: center;
+  }
+  .process-block {
+    margin: 3em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .process-image-design {
+      background-image: url(/images/Design.jpeg);
+      margin-top: 2em;
+    }
+    .process-image-production {
+      background-image: url(/images/Woodworking2.jpg);
+    }
+    .process-image {
+      height: 135px;
+      width: 240px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 1em;
+    }
+    .process-text {
+      .process-title {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+}
+
+// .image-grid {
+//   .grid-img {
+//     width: 100%;
+//     height: 200px;
+//   }
+//   .image-1 {
+//     background-image: url(/images/Hero1.jpg);
+//     background-size: cover;
+//   }
+// }
